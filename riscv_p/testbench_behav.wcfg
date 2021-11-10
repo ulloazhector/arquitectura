@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="100.001 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="145"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DataAdr" type="array">
+      <obj_property name="ElementShortName">DataAdr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataAdr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/imem/RAM" type="array">
+      <obj_property name="ElementShortName">RAM[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM[0:63][31:0]</obj_property>
+      <obj_property name="Reversed">false</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/rvpipelined/dp/InstrF" type="array">
+      <obj_property name="ElementShortName">InstrF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstrF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group136" type="group">
+      <obj_property name="label">FETCH</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/testbench/dut/PCF" type="array">
+         <obj_property name="ElementShortName">PCF[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCF[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/dp/PCPlus4F" type="array">
+         <obj_property name="ElementShortName">PCPlus4F[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4F[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/dp/PCFnext" type="array">
+         <obj_property name="ElementShortName">PCFnext[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCFnext[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider208">
+      <obj_property name="label">DECODE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/rvpipelined/c/MAINdecoder/optype" type="array">
+      <obj_property name="ElementShortName">optype[31:0]</obj_property>
+      <obj_property name="ObjectShortName">optype[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/rvpipelined/dp/InstrD" type="array">
+      <obj_property name="ElementShortName">InstrD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstrD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider24">
+      <obj_property name="label">HazardUnit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#F0E68C</obj_property>
+   </wvobject>
+   <wvobject fp_name="group71" type="group">
+      <obj_property name="label">New Group</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/lwStall" type="logic">
+         <obj_property name="ElementShortName">lwStall</obj_property>
+         <obj_property name="ObjectShortName">lwStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/StallF" type="logic">
+         <obj_property name="ElementShortName">StallF</obj_property>
+         <obj_property name="ObjectShortName">StallF</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/StallD" type="logic">
+         <obj_property name="ElementShortName">StallD</obj_property>
+         <obj_property name="ObjectShortName">StallD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/FlushD" type="logic">
+         <obj_property name="ElementShortName">FlushD</obj_property>
+         <obj_property name="ObjectShortName">FlushD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/Rs1D" type="array">
+         <obj_property name="ElementShortName">Rs1D[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Rs1D[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/Rs2D" type="array">
+         <obj_property name="ElementShortName">Rs2D[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Rs2D[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/FlushE" type="logic">
+         <obj_property name="ElementShortName">FlushE</obj_property>
+         <obj_property name="ObjectShortName">FlushE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/Rs1E" type="array">
+         <obj_property name="ElementShortName">Rs1E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Rs1E[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/Rs2E" type="array">
+         <obj_property name="ElementShortName">Rs2E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Rs2E[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/RdE" type="array">
+         <obj_property name="ElementShortName">RdE[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RdE[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/PCSrcE" type="logic">
+         <obj_property name="ElementShortName">PCSrcE</obj_property>
+         <obj_property name="ObjectShortName">PCSrcE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/ForwardAE" type="array">
+         <obj_property name="ElementShortName">ForwardAE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardAE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/ForwardBE" type="array">
+         <obj_property name="ElementShortName">ForwardBE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardBE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/ResultSrcEb0" type="logic">
+         <obj_property name="ElementShortName">ResultSrcEb0</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcEb0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/RdM" type="array">
+         <obj_property name="ElementShortName">RdM[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RdM[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/RegWriteM" type="logic">
+         <obj_property name="ElementShortName">RegWriteM</obj_property>
+         <obj_property name="ObjectShortName">RegWriteM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/RdW" type="array">
+         <obj_property name="ElementShortName">RdW[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RdW[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/dut/rvpipelined/hz/RegWriteW" type="logic">
+         <obj_property name="ElementShortName">RegWriteW</obj_property>
+         <obj_property name="ObjectShortName">RegWriteW</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider69">
+      <obj_property name="label">Control Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/rvpipelined/c/ALUSrcD" type="logic">
+      <obj_property name="ElementShortName">ALUSrcD</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/rvpipelined/c/ALUSrcE" type="logic">
+      <obj_property name="ElementShortName">ALUSrcE</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/rvpipelined/c/ResultSrcW" type="array">
+      <obj_property name="ElementShortName">ResultSrcW[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ResultSrcW[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider70">
+      <obj_property name="label">Datapath</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/rvpipelined/dp/rf/rf" type="array">
+      <obj_property name="ElementShortName">rf[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/rvpipelined/dp/ALUResultM" type="array">
+      <obj_property name="ElementShortName">ALUResultM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUResultM[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/ReadData" type="array">
+      <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/dut/dmem/RAM" type="array">
+      <obj_property name="ElementShortName">RAM[0:127][31:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM[0:127][31:0]</obj_property>
+   </wvobject>
+</wave_config>

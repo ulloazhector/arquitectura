@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Oct 26 11:14:33 2021
+# Process ID: 11664
+# Current directory: C:/Users/ulloa/Documents/UNRN/ADC/riscv
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12220 C:\Users\ulloa\Documents\UNRN\ADC\riscv\riscv.xpr
+# Log file: C:/Users/ulloa/Documents/UNRN/ADC/riscv/vivado.log
+# Journal file: C:/Users/ulloa/Documents/UNRN/ADC/riscv\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ulloa/Documents/UNRN/ADC/riscv/riscv.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/ulloa/Documents/UNRN/ADC/riscv/testbench_behav.wcfg
+source testbench.tcl
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
