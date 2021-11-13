@@ -11,11 +11,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="41.090 ns"></ZoomStartTime>
-      <ZoomEndTime time="54.212 ns"></ZoomEndTime>
-      <Cursor1Time time="204.365 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="30.186 ns"></ZoomEndTime>
+      <Cursor1Time time="39.868 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
+      <NameColumnWidth column_width="145"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
@@ -49,7 +50,6 @@
    <wvobject fp_name="/testbench/dut/dmem/RAM" type="array">
       <obj_property name="ElementShortName">RAM[0:127][0:3][7:0]</obj_property>
       <obj_property name="ObjectShortName">RAM[0:127][0:3][7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/dut/rvsingle/dp/rf/rf" type="array">
       <obj_property name="ElementShortName">rf[0:31][0:3][7:0]</obj_property>

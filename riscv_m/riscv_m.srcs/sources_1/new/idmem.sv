@@ -29,9 +29,12 @@ module idmem(input logic clk, we,
     logic [31:0] RAM[128];
     initial $readmemh("loadmem.mem",RAM);
 
+    logic [31:0] Adr;
+    assign Adr = a << 2;
+
     //assign RAM[4] = 11;
     //assign RAM[6] = 254;
-    assign RAM[7] = 10;
+    assign RAM[28] = 10;
 
     /* * * * * * * * * * * * * * * * *
 
@@ -41,9 +44,9 @@ module idmem(input logic clk, we,
 
     * * * * * * * * * * * * * * * * * */ 
 
-    assign rd = RAM[a[6:2]];
+    assign rd = RAM[Adr[7:2]];
 
     always_ff @(posedge clk)
-        if (we) RAM[a[6:2]] <= wd;
+        if (we) RAM[Adr[7:2]] <= wd;
 
 endmodule

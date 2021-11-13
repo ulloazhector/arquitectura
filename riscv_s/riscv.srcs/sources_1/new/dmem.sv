@@ -21,31 +21,38 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module dmem(input logic clk, we,
-            input logic [31:0] a, wd,
-            input logic [2:0] size,
-            output logic [31:0] rd);
+module dmem(input   logic clk, we,
+            input   logic [31:0] a, wd,
+            input   logic [2:0] size,
+            output  logic [31:0] rd);
 
 logic [7:0] RAM[128][4];
-//assign RAM[28] = '{171,250,170,10};
-// assign RAM[28] = '{3,0,0,0};
+logic [31:0] Adr;
 
-// assign RAM[28] = '{8'hfd,8'hff,8'hff,8'hff}; // -3
-// assign RAM[28] = '{8'hff,8'hff,8'hff,8'hff}; // -1
-// assign RAM[28] = '{8'h02,8'h00,8'h00,8'h00}; // 2
-// assign RAM[28] = '{8'h04,8'h00,8'h00,8'h00}; // 4
+assign RAM[28] = '{10, 0, 0, 0};
 
-assign rd = {RAM[a[6:0]][3], RAM[a[6:0]][2], RAM[a[6:0]][1], RAM[a[6:0]][0]}; // word aligned
+
+// initial begin
+//     for (int i = 0; i < 128; i++) begin
+//         RAM[i] = '{i,i,i,i};
+//     end
+// end
+
+
+assign Adr = a << 2;
+assign rd = {RAM[Adr[8:2]][3], RAM[Adr[8:2]][2], RAM[Adr[8:2]][1], RAM[Adr[8:2]][0]}; // word aligned
+    
+
 
 always_ff @(posedge clk)
     if (we) begin 
         case(size)
             3'b000: 
-                RAM[a[6:0]][0] <=  wd[7:0];                                 // byte
+                RAM[Adr[8:2]][0] <=  wd[7:0];                                   // byte
             3'b001: 
-                {RAM[a[6:0]][1], RAM[a[6:0]][0]} <= {wd[15:8], wd[7:0]};    // half
+                {RAM[Adr[8:2]][1], RAM[Adr[8:2]][0]} <= {wd[15:8], wd[7:0]};    // half
             3'b010:
-                RAM[a[6:0]] <= '{wd[7:0], wd[15:8], wd[23:16], wd[31:24]};  // word
+                RAM[Adr[8:2]] <= '{wd[7:0], wd[15:8], wd[23:16], wd[31:24]};  // word
             default:;
         endcase
     end

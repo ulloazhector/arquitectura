@@ -30,16 +30,16 @@ module regFile(input logic         clk,
                output logic [31:0] rd1, rd2);
 
 logic [7:0] rf[32][4];
+assign rf[0] = '{'0, '0, '0, '0}; // x0 = 0
 
 // assign rf[5] = '{8'hfd,8'hff,8'hff,8'hff}; // -3
 // assign rf[5] = '{8'hff,8'hff,8'hff,8'hff}; // -1
 // assign rf[5] = '{8'h08,8'h00,8'h00,8'h00}; // 2
 // assign rf[5] = '{8'h04,8'h00,8'h00,8'h00}; // 4
 
-//assign rf[6] = '{8'haa,8'haa,8'haa,8'haa};
-// assign rf[9] = '{8'h20,8'h00,8'h00,8'h00};
+assign rf[6] = '{8'haa,8'haa,8'haa,8'haa};
+assign rf[9] = '{32, 0, 0, 0};
 
-assign rf[0] = '{'0, '0, '0, '0}; // x0 = 0
 
 // three ported register file
 // read two ports combinationally (A1/RD1, A2/RD2)

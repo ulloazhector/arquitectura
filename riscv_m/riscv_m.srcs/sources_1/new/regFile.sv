@@ -34,7 +34,6 @@ logic [7:0] rf[32][4];
 // register 0 hardwired to 0
 assign rf[0] = '{'0, '0, '0, '0}; // x0 = 0
 assign rf[5] = '{8'd6, '0, '0, '0};
-assign rf[6] = '{8'd10, '0, '0, '0};
 assign rf[9] = '{8'd32, '0,'0,'0}; // x9 = 32
 
 // three ported register file

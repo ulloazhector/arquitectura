@@ -72,7 +72,7 @@ logic [31:0] aux;
 
     // AlU logic
     mux3 #(32)  amux(PC, OldPC, A, ALUSrcA, SrcA);
-    mux3 #(32)  bmux(WriteData, ImmExt, 32'd4, ALUSrcB, SrcB);
+    mux3 #(32)  bmux(WriteData, ImmExt, 32'd1, ALUSrcB, SrcB); // Hago PC = PC + 1
     alu         alu(SrcA, SrcB, ALUControl, ALUResult, Zero);
     flopr #(32) alureg(clk, reset, 1'b1, ALUResult, ALUOut);
 
